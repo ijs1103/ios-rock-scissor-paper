@@ -7,6 +7,27 @@
 
 import Foundation
 
+private func calcResult(with input: Int) -> Result {
+    
+    let randomInt = Int.random(in: 1...3)
+    
+    let diff = randomInt - input
+        
+    if diff == 0 {
+        return .draw
+    }
+    
+    if [-1, 2].contains(diff) {
+        return .lose
+    }
+    
+    if [1, -2].contains(diff) {
+        return .win
+    }
+    
+    return .none
+}
+
 private func printChoice() {
     print("가위(1), 바위(2), 보(3)! <종료 : 0> :")
 }
