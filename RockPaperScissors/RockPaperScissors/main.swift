@@ -14,3 +14,7 @@ private func printChoice() {
 private func printGameExit() {
     print("게임 종료")
 }
+
+private func printBadInput() {
+    print("잘못된 입력입니다. 다시 시도해주세요.")
+}
