@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7ABA0E1254EA63000B2367D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABA0E0254EA63000B2367D /* main.swift */; };
+		2A7708682B0DB887003640F0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7708672B0DB887003640F0 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A7708672B0DB887003640F0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C7ABA0DD254EA63000B2367D /* RockPaperScissors */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RockPaperScissors; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7ABA0E0254EA63000B2367D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		C7ABA0DF254EA63000B2367D /* RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
-				C7ABA0E0254EA63000B2367D /* main.swift */,
+				2A7708672B0DB887003640F0 /* main.swift */,
 			);
 			path = RockPaperScissors;
 			sourceTree = "<group>";
@@ -93,6 +93,7 @@
 				TargetAttributes = {
 					C7ABA0DC254EA63000B2367D = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -119,7 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7ABA0E1254EA63000B2367D /* main.swift in Sources */,
+				2A7708682B0DB887003640F0 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,8 +245,10 @@
 		C7ABA0E5254EA63000B2367D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -253,6 +256,7 @@
 		C7ABA0E6254EA63000B2367D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
