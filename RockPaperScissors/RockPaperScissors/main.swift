@@ -7,6 +7,37 @@
 
 import Foundation
 
+outerLoop: while true {
+    
+    printChoice()
+    
+    guard let input = readLine(), let intInput = Int(input) else {
+        printBadInput()
+        continue
+    }
+    
+    switch intInput {
+        
+    case 1, 2, 3:
+        let result = calcResult(with: intInput)
+        print(result.rawValue)
+        switch result {
+        case .win, .lose:
+            printGameExit()
+            break outerLoop
+        default:
+            break
+        }
+        
+    case 0:
+        printGameExit()
+        break outerLoop
+        
+    default:
+        printBadInput()
+    }
+}
+
 private func calcResult(with input: Int) -> Result {
     
     let randomInt = Int.random(in: 1...3)
